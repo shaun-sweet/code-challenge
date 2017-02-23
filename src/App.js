@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { gatherFormData, postForm, postingFinished, formSubmitted, displayName } from './actions'
-import thunk from 'redux-thunk'
 var mapStateToProps = function(store) {
   return {
     formData: store.formData,
