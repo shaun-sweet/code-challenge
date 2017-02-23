@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { gatherFormData, postForm, postingFinished, formSubmitted, displayName } from './actions'
 var mapStateToProps = function(store) {
