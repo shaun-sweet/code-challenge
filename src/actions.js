@@ -1,4 +1,4 @@
-export function gatherFormData(formData) {
+export function updateFormData(formData) {
   return {
     type: "UPDATE_FORM_DATA",
     payload: formData
@@ -26,9 +26,23 @@ export function postingFinished() {
   }
 }
 
-export function displayName() {
+export function formErrorsTrue() {
   return {
-    type: "DISPLAY_NAME",
+    type: "FORM_ERRORS_TRUE",
+    payload: true,
+  }
+}
+
+export function formErrorsFalse() {
+  return {
+    type: "FORM_ERRORS_FALSE",
+    payload: false,
+  }
+}
+
+export function submitComplete() {
+  return {
+    type: "SUBMIT_COMPLETE",
     payload: true,
   }
 }
